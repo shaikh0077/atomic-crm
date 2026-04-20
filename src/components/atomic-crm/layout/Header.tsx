@@ -30,12 +30,12 @@ const Header = () => {
   return (
     <>
       <nav className="grow">
-        <header className="bg-secondary">
+        <header className="bg-primary">
           <div className="px-4">
             <div className="flex justify-between items-center flex-1">
               <Link
                 to="/"
-                className="flex items-center gap-2 text-secondary-foreground no-underline"
+                className="flex items-center gap-2 text-secondary no-underline"
               >
                 <img
                   className="[.light_&]:hidden h-6"
@@ -47,7 +47,7 @@ const Header = () => {
                   src={lightModeLogo}
                   alt={title}
                 />
-                <h1 className="text-xl font-semibold">{title}</h1>
+                <h1 className="text-xl font-semibold text-secondary">{title}</h1>
               </Link>
               <div>
                 <nav className="flex">
@@ -114,8 +114,8 @@ const NavigationTab = ({
     to={to}
     className={`px-6 py-3 text-sm font-medium transition-colors border-b-2 ${
       isActive
-        ? "text-secondary-foreground border-secondary-foreground"
-        : "text-secondary-foreground/70 border-transparent hover:text-secondary-foreground/80"
+        ? "text-secondary border-secondary"
+        : "text-secondary/70 border-transparent hover:text-secondary/80"
     }`}
   >
     {label}

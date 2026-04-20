@@ -1,4 +1,4 @@
-# Atomic CRM
+# SPC - CRM
 
 A full-featured CRM built with React, shadcn-admin-kit, and Supabase.
 
